@@ -1,0 +1,28 @@
+@import "colors";
+@import "reset";
+
+h1 {
+  font-size: 30px;
+  color: $primaryColor;
+}
+
+.card {
+  margin: 0 auto;
+  width: 20%;
+  border-radius: 10px;
+  border: 2px solid;
+  color: $secondaryColor;
+  img {
+    width: 100%;
+  }
+  .card-footer{
+    background-color: $primaryColor;
+    color:$whiteColor;
+    font-size: 20px;
+
+    &:hover{
+      background-color: $secondaryColor;     
+    }
+  }
+}
+
