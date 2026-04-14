@@ -1,0 +1,171 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: rgb(31, 37, 53);
+  padding: 13px;
+  border-radius: 20px;
+  margin-top: -15px;
+}
+
+.header img {
+  filter: brightness(0) invert(1);
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.filters {
+  display: flex;
+  gap: 15px;
+}
+
+.filters button {
+  background: #1e293b;
+  border: none;
+  padding: 10px 36px;
+  border-radius: 20px;
+  color: #cbd5f5;
+  cursor: pointer;
+  transition: 0.5s;
+  font-size: 16px;
+}
+
+.filters button:hover {
+  background: #334155;
+}
+
+.filters .active {
+  background: #ef4444;
+  color: white;
+  font-size: 16px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: #000b27;
+  color: rgb(247, 247, 247);
+  padding: 70px 90px;
+}
+
+.title {
+  margin: 25px 0 15px;
+  font-size: 20px;
+}
+
+.card {
+  background: #222a38;
+  border-radius: 20px;
+  padding: 20px;
+  flex: 1 1 calc(33.333% - 20px);
+  min-width: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: 0.45s ease;
+}
+
+.card h4 {
+  color: white;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 15px;
+  color: #94a3b8;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  background: #3c3c4b;
+}
+
+.card-top {
+  display: flex;
+  gap: 12px;
+}
+
+.icon img {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+}
+
+.card-bottom {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.remove {
+  background: transparent;
+  border: 1px solid #eef2f7;
+  padding: 7px 14px;
+  border-radius: 20px;
+  color: #cbd5f5;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.remove:hover {
+  border-color: #ef4444;
+  color: #ef4444;
+}
+
+.switch {
+  position: relative;
+  width: 42px;
+  height: 22px;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  inset: 0;
+  background: #475569;
+  border-radius: 20px;
+  transition: 0.4s;
+}
+
+.slider::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background: white;
+  border-radius: 50%;
+  top: 3px;
+  left: 3px;
+  transition: 0.3s;
+}
+
+.switch input:checked + .slider {
+  background: #ef4444;
+}
+
+.switch input:checked + .slider::before {
+  transform: translateX(20px);
+}
+
+.switch input:checked + .slider {
+  background: #ef4444;
+}
+
+.switch input:checked + .slider::before {
+  transform: translateX(20px);
+}/*# sourceMappingURL=style.css.map */

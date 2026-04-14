@@ -1,0 +1,20 @@
+$BackgroundColor: rgb(31 37 53);
+$HeaderPadding: 13px;
+$BorderRadius: 20px;
+$ImageFilter: brightness(0) invert(1);
+
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: $BackgroundColor;
+  padding: $HeaderPadding;
+  border-radius: $BorderRadius;
+  margin-top: -15px;
+}
+
+.header img {
+  filter: $ImageFilter;
+}

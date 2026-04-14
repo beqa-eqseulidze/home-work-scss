@@ -1,0 +1,29 @@
+$MarginTOP: 40px;
+$RemoveBorder: 1px solid #eef2f7;
+$Transition: 0.3s;
+$RemoveHoverColor: #ef4444;
+
+
+
+.card-bottom {
+  margin-top: $MarginTOP;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.remove {
+  background: transparent;
+  border: $RemoveBorder;
+  padding: 7px 14px;
+  border-radius: 20px;
+  color: #cbd5f5;
+  cursor: pointer;
+  transition: $Transition;
+}
+
+.remove:hover {
+  border-color: $RemoveHoverColor;
+  color: #ef4444;
+}
+

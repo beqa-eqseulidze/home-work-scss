@@ -1,0 +1,34 @@
+$MyBackground: #222a38;
+$BorderRadius: 20px;
+$CardPadding: 20px;
+$CardTransition:  0.45s ease;
+$TextColor: white;
+$FontSize: 18px;
+$ParagraphColor: #94a3b8;
+$ParagraphFontSize: 15px;
+
+
+
+.card {
+  background: $MyBackground;
+  border-radius: $BorderRadius;
+  padding: $CardPadding;
+  flex: 1 1 calc(33.333% - 20px); 
+  min-width: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: $CardTransition;
+}
+
+
+.card h4 {
+  color: $TextColor;
+  font-size: $FontSize;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: $ParagraphFontSize;
+  color: $ParagraphColor;
+}

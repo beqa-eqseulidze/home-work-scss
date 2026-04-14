@@ -1,0 +1,6 @@
+$CardHoverBackground: #3c3c4b;
+
+.card:hover {
+  transform: translateY(-5px);
+  background: $CardHoverBackground;
+}

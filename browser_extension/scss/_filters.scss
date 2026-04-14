@@ -1,0 +1,33 @@
+$FilterPaddings: 10px 36px;
+$FilterBorderRadius: 20px;
+$MyTransition: 0.5s;
+$ActiveFilter:#ef4444;
+$FilterGAP: 15px;
+$FONT_size: 16px;
+
+
+.filters {
+  display: flex;
+  gap: $FilterGAP;
+}
+
+.filters button {
+  background: #1e293b;
+  border: none;
+  padding: $FilterPaddings;
+  border-radius: $FilterBorderRadius;
+  color: #cbd5f5;
+  cursor: pointer;
+  transition:$MyTransition;
+  font-size: $FONT_size;
+}
+
+.filters button:hover {
+  background: #334155;
+}
+
+.filters .active {
+  background: $ActiveFilter;
+  color: white;
+  font-size: $FONT_size;
+}

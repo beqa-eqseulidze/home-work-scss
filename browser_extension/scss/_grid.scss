@@ -1,0 +1,9 @@
+$GridGAP: 15px;
+
+
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $GridGAP;
+}
