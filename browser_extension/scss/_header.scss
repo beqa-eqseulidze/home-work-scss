@@ -1,7 +1,7 @@
-$BackgroundColor: rgb(31 37 53);
+$HeaderBackgroundColor: rgb(31 37 53);
 $HeaderPadding: 13px;
-$BorderRadius: 20px;
-$ImageFilter: brightness(0) invert(1);
+$HeaderBorderRadius: 20px;
+$HeaderImageFilter: brightness(0) invert(1);
 
 
 .header {
@@ -9,12 +9,17 @@ $ImageFilter: brightness(0) invert(1);
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  background-color: $BackgroundColor;
+  background-color: $HeaderBackgroundColor;
   padding: $HeaderPadding;
-  border-radius: $BorderRadius;
+  border-radius: $HeaderBorderRadius;
   margin-top: -15px;
 }
 
 .header img {
-  filter: $ImageFilter;
+  filter: $HeaderImageFilter;
+}
+
+.title {
+  margin: 25px 0 15px;
+  font-size: 20px;
 }

@@ -1,12 +1,12 @@
-$MarginTOP: 40px;
-$RemoveBorder: 1px solid #eef2f7;
+$CardMarginTOP: 40px;
+$RemoveButtonBorder: 1px solid #eef2f7;
 $Transition: 0.3s;
 $RemoveHoverColor: #ef4444;
 
 
 
 .card-bottom {
-  margin-top: $MarginTOP;
+  margin-top: $CardMarginTOP;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -14,7 +14,7 @@ $RemoveHoverColor: #ef4444;
 
 .remove {
   background: transparent;
-  border: $RemoveBorder;
+  border: $RemoveButtonBorder;
   padding: 7px 14px;
   border-radius: 20px;
   color: #cbd5f5;

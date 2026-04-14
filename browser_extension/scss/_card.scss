@@ -1,34 +1,40 @@
 $MyBackground: #222a38;
-$BorderRadius: 20px;
+$CardBorderRadius: 20px;
 $CardPadding: 20px;
-$CardTransition:  0.45s ease;
+$CardTransition: 0.45s ease;
 $TextColor: white;
-$FontSize: 18px;
+$FontSize:18px;
 $ParagraphColor: #94a3b8;
 $ParagraphFontSize: 15px;
-
-
+$CardHoverBackground: #3c3c4b;
 
 .card {
   background: $MyBackground;
-  border-radius: $BorderRadius;
+  border-radius: $CardBorderRadius;
   padding: $CardPadding;
-  flex: 1 1 calc(33.333% - 20px); 
+  flex: 1 1 calc(33.333% - 20px);
   min-width: 260px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   transition: $CardTransition;
+
+  h4 {
+    color: $TextColor;
+    font-size: $FontSize;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: $ParagraphFontSize;
+    color: $ParagraphColor;
+  }
+
+  &:hover {
+    transform: translateY(-5px);
+    background: $CardHoverBackground;
+  }
 }
 
 
-.card h4 {
-  color: $TextColor;
-  font-size: $FontSize;
-  margin-bottom: 10px;
-}
 
-.card p {
-  font-size: $ParagraphFontSize;
-  color: $ParagraphColor;
-}

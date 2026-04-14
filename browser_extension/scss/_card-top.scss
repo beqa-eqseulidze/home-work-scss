@@ -1,16 +1,16 @@
-$TopGap : 12px;
-$IconWidth : 50px;
-$IconHeight : 50px;
+$CardTopGap : 12px;
+$CardIconWidth : 50px;
+$CardIconHeight : 50px;
 
 
 
 .card-top {
   display: flex;
-  gap: $TopGap;
+  gap: $CardTopGap;
 }
 
 .icon img {
-  width: $IconWidth;
-  height: $IconHeight;
+  width: $CardIconWidth;
+  height: $CardIconHeight;
   border-radius: 10px;
 }

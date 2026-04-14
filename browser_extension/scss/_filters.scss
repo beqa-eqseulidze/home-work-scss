@@ -1,9 +1,9 @@
 $FilterPaddings: 10px 36px;
 $FilterBorderRadius: 20px;
-$MyTransition: 0.5s;
+$MyFilterTransition: 0.5s;
 $ActiveFilter:#ef4444;
 $FilterGAP: 15px;
-$FONT_size: 16px;
+$FilterFONT_size: 16px;
 
 
 .filters {
@@ -18,8 +18,8 @@ $FONT_size: 16px;
   border-radius: $FilterBorderRadius;
   color: #cbd5f5;
   cursor: pointer;
-  transition:$MyTransition;
-  font-size: $FONT_size;
+  transition:$MyFilterTransition;
+  font-size: $FilterFONT_size;
 }
 
 .filters button:hover {
