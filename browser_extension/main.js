@@ -60,3 +60,54 @@ const extensions = [
     enabled: true,
   }
 ];
+
+
+
+const cards=Array.from(document.querySelectorAll(".card"));
+const buttons = document.querySelectorAll(".filters button");
+
+cards.forEach((card, index)=>{
+  const checker = card.querySelector("input");
+  checker.checked = extensions[index].enabled;
+});
+
+
+buttons.forEach(button =>{
+  button.addEventListener("click",()=>{
+
+    
+    buttons.forEach(btnn => btnn.classList.remove("active"));
+    button.classList.add("active");
+
+    const type = button.textContent.toLowerCase();
+
+    const visibleCards = cards.reduce((acc, card, index) => {
+      const Active = extensions[index].enabled;
+
+      const show = type === "all" || (type === "active" && Active);
+      return show ? [...acc, card] : acc;
+    },[]);
+
+
+    cards.forEach(card => {
+      card.style.display = "none";
+    });
+
+   
+    visibleCards.forEach(card => {
+      card.style.display = "block";
+    });
+  });
+});
+
+
+cards.forEach((card, index) => {
+  const checkbox = card.querySelector("input");
+
+  checkbox.addEventListener("change",()=>{
+
+    
+    const activeButton = document.querySelector(".filters .active");
+    activeButton.click();
+  });
+});
