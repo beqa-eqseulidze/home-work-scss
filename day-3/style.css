@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  background: white;
+}
+.header .nav {
+  display: flex;
+}
+.header .nav a {
+  text-decoration: none;
+  color: blue;
+}
+
+.nav-link {
+  color: red;
+}
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+}
+
+h5 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: green;
+}/*# sourceMappingURL=style.css.map */

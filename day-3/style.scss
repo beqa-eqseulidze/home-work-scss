@@ -1,0 +1,40 @@
+// @import 'colors2';
+@use 'colors';
+// @use 'mixins';
+@import 'mixins';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  background: white;
+  .nav {
+    display: flex;
+    a {
+      text-decoration: none;
+      color: blue;
+    }
+  }
+}
+
+.nav-link {
+  color: colors.$my-color;  
+  &:hover {    
+    text-decoration: underline;   
+  }
+}
+
+footer{
+    @include flex-center();
+}
+
+h5{
+    @include flex-center(green,row);
+}
+
+
+
+
